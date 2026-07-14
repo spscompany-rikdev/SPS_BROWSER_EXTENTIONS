@@ -1,5 +1,133 @@
-SPS_BROWSER_EXTENTIONS
-only extentions for sps browser pro is available here
-<div>
-<a href="https://github.com/spscompany-rikdev/SPS_BROWSER_EXTENTIONS/blob/main/sps_dark_mode_ext.json" download>Download DARK THEME MODE FOR ALL WEBSITES</a>
-<div/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPS Browser Pro Extensions Store</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --btn-color: #3b82f6;
+            --btn-hover: #2563eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .extension-card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .extension-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-info h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.4rem;
+        }
+
+        .card-info p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0 0 20px 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            text-align: center;
+            background-color: var(--btn-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .download-btn:hover {
+            background-color: var(--btn-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>SPS_BROWSER_EXTENTIONS</h1>
+        <p>Only extensions for SPS Browser Pro are available here</p>
+    </div>
+
+    <div class="store-grid">
+
+        <!-- Extension Card 1: Dark Mode -->
+        <div class="extension-card">
+            <div class="card-info">
+                <h2>🌙 SPS Dark Mode</h2>
+                <p>Applies a smooth dark theme to every website you visit seamlessly.</p>
+            </div>
+            <!-- The href targets your local file exactly -->
+            <a href="sps_dark_mode_ext.json" download="sps_dark_mode_ext.json" class="download-btn">
+                Download Extension
+            </a>
+        </div>
+
+        <!-- Extension Card 2: Template for future files -->
+        <!-- Just copy, paste, and change filenames below when you add more -->
+        <div class="extension-card">
+            <div class="card-info">
+                <h2>🛡️ SPS Ad Blocker</h2>
+                <p>Block intrusive popups and trackers safely while browsing.</p>
+            </div>
+            <a href="sps_ad_blocker.json" download="sps_ad_blocker.json" class="download-btn">
+                Download Extension
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

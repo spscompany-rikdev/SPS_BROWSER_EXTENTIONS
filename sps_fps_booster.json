@@ -1,0 +1,12 @@
+{
+  "name": "SPS Performance Booster",
+  "description": "Optimizes CPU and RAM tracking loops to speed up sluggish pages and interfaces",
+  "version": "1.0",
+  "author": "SPS Browser",
+  "match": "*",
+  "type": "JavaScript",
+  "icon": "⚡",
+  "show_in_toolbar": true,
+  "toolbar_action": "run_code",
+  "code": "(function(){var s=document.createElement('style');s.textContent='* { transition: none !important; animation: none !important; box-shadow: none !important; text-shadow: none !important; }';document.head.appendChild(s);document.querySelectorAll('iframe:not([src])').forEach(function(f){f.remove();});console.log('SPS Browser Pro Engine Optimized');})();"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "SPS Dark Mode",
+  "description": "Applies a smooth dark theme to every website you visit",
+  "version": "1.0",
+  "author": "SPS Browser",
+  "match": "*",
+  "type": "JavaScript",
+  "icon": "🌙",
+  "show_in_toolbar": true,
+  "toolbar_action": "run_code",
+  "code": "(function(){var id='sps-dark-mode';var existing=document.getElementById(id);if(existing){existing.remove();return;}var s=document.createElement('style');s.id=id;s.textContent='html,body,div,section,article,aside,nav,header,footer,main{background-color:#1a1a2e !important;color:#e0e0e0 !important;}a{color:#8ab4f8 !important;}input,textarea,select,button{background:#2a2a3e !important;color:#e0e0e0 !important;border-color:#444 !important;}img,video,iframe,canvas,svg{filter:brightness(0.85);}';document.head.appendChild(s);})();"
+}

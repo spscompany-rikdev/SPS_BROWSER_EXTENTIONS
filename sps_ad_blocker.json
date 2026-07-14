@@ -1,0 +1,12 @@
+{
+  "name": "SPS Ad Blocker",
+  "description": "Blocks intrusive advertisements, banners, popups, and track vectors instantly",
+  "version": "1.0",
+  "author": "SPS Browser",
+  "match": "*",
+  "type": "JavaScript",
+  "icon": "🛡️",
+  "show_in_toolbar": true,
+  "toolbar_action": "run_code",
+  "code": "(function(){var selectors=['.adsbygoogle','[id^=\"google_ads_html\"]','iframe[src*=\"doubleclick\"]','.ad-container','.ad-banner','.sponsor-ads','div[class*=\"ad-overlay\"]','div[id*=\"ad-wrapper\"]','div[class*=\"Premium_Ad\"]'];function clean(){selectors.forEach(function(s){document.querySelectorAll(s).forEach(function(el){el.remove();});});}clean();var observer=new MutationObserver(clean);observer.observe(document.body,{childList:true,subtree:true});console.log('SPS Ad Blocker Activated');})();"
+}
